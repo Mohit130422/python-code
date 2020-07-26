@@ -1,0 +1,14 @@
+#type_check
+a=10
+b=2.4
+c='a'
+d="arijit"
+e="""moksh"""
+f='''bbb'''
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(e))
+print(type(f))
+#run

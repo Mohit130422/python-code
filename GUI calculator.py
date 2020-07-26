@@ -1,0 +1,31 @@
+from tkinter import *
+window=Tk()
+window.title("Welcome to my_python_calculator")
+window.geometry('350x200')
+lbl = Label(window,text="Enter two No.:",fg='black',bg='yellow')
+lbl.grid(column=0,row=0)
+window.geometry('350x200')
+txt=Entry(window,width=10)
+txt.grid(column=1,row=0)
+txt1=Entry(window,width=10)
+txt1.grid(column=2,row=0)
+txt2=Entry(window,width=10)
+txt2.grid(column=3,row=0,)
+print("")
+def add():
+    lbl.configure(text="Addition!!")
+btn = Button(window,text="Addition" ,fg='black', bg='red',command=add)
+btn.grid(column=0,row=1)
+def sub():
+    lbl.configure(text="Subtraction!!")
+btn1 = Button(window,text="Subtraction",fg='white',bg='black',command=sub)
+btn1.grid(column=1,row=1)
+def mul():
+    lbl.configure(text="Multiply!!")
+btn2 = Button(window,text="Multiplication",fg='black',bg='cyan',command=mul)
+btn2.grid(column=2,row=1)
+def div():
+    lbl.configure(text="Division!!")
+btn3 = Button(window,text="Division",fg='white',bg='green',command=div)
+btn3.grid(column=3,row=1)
+window.mainloop()

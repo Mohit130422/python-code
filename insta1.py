@@ -1,0 +1,1 @@
+def main():    a=16#int(input("enter "))    b=15#int(input("enter"))    r=a%b/a    print("result:-",r)if __name__ == '__main__':    main()
